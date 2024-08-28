@@ -19,7 +19,9 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"predeploy": "yarn build",
+		"deploy": "gh-pages -d build"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -41,8 +43,10 @@
 	},
 	"devDependencies": {
 		"@jti-extensions/types": "^5.4.6",
+		"@types/gh-pages": "^6",
 		"@types/react-dom": "^18.3.0",
 		"@types/react-syntax-highlighter": "^15.5.13",
+		"gh-pages": "^6.1.1",
 		"jsdoc": "^4.0.3",
 		"prettier": "^3.3.3",
 		"typescript": "^5.5.4"
