@@ -1,0 +1,66 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "StateData",
+	"type": "object",
+	"additionalProperties": {
+		"oneOf": [
+			{ "$ref": "#/definitions/Primitive" },
+			{ "$ref": "#/definitions/PrimitiveArray" },
+			{ "$ref": "#/definitions/LevelOneObject" }
+		]
+	},
+	"definitions": {
+		"Primitive": {
+			"oneOf": [
+				{ "type": "string" },
+				{ "type": "number" },
+				{ "type": "boolean" },
+				{ "type": "object", "additionalProperties": false }
+			]
+		},
+		"PrimitiveArray": {
+			"type": "array",
+			"items": {
+				"oneOf": [
+					{ "type": "string" },
+					{ "type": "number" },
+					{ "type": "boolean" },
+					{ "$ref": "#/definitions/LevelOneObject" }
+				]
+			},
+			"additionalProperties": false
+		},
+		"LevelOneObject": {
+			"type": "object",
+			"additionalProperties": {
+				"oneOf": [
+					{ "type": "string" },
+					{ "type": "number" },
+					{ "type": "boolean" },
+					{ "$ref": "#/definitions/LevelTwoObject" }
+				]
+			}
+		},
+		"LevelTwoObject": {
+			"type": "object",
+			"additionalProperties": {
+				"oneOf": [
+					{ "type": "string" },
+					{ "type": "number" },
+					{ "type": "boolean" },
+					{ "$ref": "#/definitions/LevelThreeObject" }
+				]
+			}
+		},
+		"LevelThreeObject": {
+			"type": "object",
+			"additionalProperties": {
+				"oneOf": [
+					{ "type": "string" },
+					{ "type": "number" },
+					{ "type": "boolean" }
+				]
+			}
+		}
+	}
+}

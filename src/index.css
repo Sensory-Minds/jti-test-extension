@@ -1,0 +1,57 @@
+/* html,
+body {
+	height: 100%;
+} */
+
+/*  
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+		'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+	min-height: 100%;
+	display: flex;
+}
+
+.button-container,
+.result-container {
+	height: 100%;
+}
+.button-container {
+	padding: 40px;
+	flex-wrap: wrap;
+}
+
+.result-container {
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.result-container > pre {
+	flex: 1;
+	font-size: 14px;
+	margin: 0 !important;
+}
+
+.snackbar .snackbar--error {
+	background-color: red;
+}
+
+#client-snackbar {
+	display: flex;
+	align-items: center;
+}
+#client-snackbar .snackbar--icon {
+	margin-right: 20px;
+} */
