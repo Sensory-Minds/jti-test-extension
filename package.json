@@ -1,7 +1,7 @@
 {
 	"name": "jti-test-extension",
 	"version": "0.1.0",
-	"homepage": "https://sensry-minds.github.io/jti-test-extension",
+	"homepage": "https://Sensory-Minds.github.io/jti-test-extension",
 	"private": true,
 	"dependencies": {
 		"@emotion/react": "^11.13.3",
